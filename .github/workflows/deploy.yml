@@ -34,6 +34,10 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install latest NPM
         run: npm i -g npm@latest
+        
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+  
       - name: Install dependencies
         run: npm install
       - name: Build Angular app
