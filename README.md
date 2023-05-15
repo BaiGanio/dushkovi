@@ -13,7 +13,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
+```
+npm i angular-cli-ghpages --save-dev
+ng build --prod --base-href "https://baiganio.github.io/dushkovi/"
+npx angular-cli-ghpages --dir=dist/dushkovi
+```
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
