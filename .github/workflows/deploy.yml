@@ -43,8 +43,7 @@ jobs:
       - name: Build Angular app
         run: ng build
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./dist/dushkovi
+          branch: gh-pages
+          folder: dist/dushkovi
