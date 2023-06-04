@@ -9,62 +9,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Начало</a>
+          <a class="nav-link active" aria-current="page" routerLink="/home">Начало</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Стаи</a>
+          <a class="nav-link" routerLink="/rooms">Стаи</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Механа</a>
+          <a class="nav-link" routerLink="/tavern">Механа</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacts">Контакти</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-<div class="container-fluid py-3">
-  <div class="row my-3">
-    <app-carousel-basic></app-carousel-basic>
-  </div>
-  <div class="row my-3">
-    <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-  </div>
-  <div class="row my-3">
-    <div class="col">
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-      </div>
-    </div>
-  </div>
-  <div class="row my-3">
-    <div class="col">
-      <button class="btn btn-sm btn-outline-primary" (click)="open(demoModal)">Launch demo modal</button>
-    </div>
-  </div>
-</div>
-
-<ng-template #demoModal let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-  </div>
-  <div class="modal-body">
-    <form>
-      <div class="form-group">
-        <label for="dateOfBirth">Date of birth</label>
-        <div class="input-group">
-          <input id="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" ngbDatepicker #dp="ngbDatepicker">
-          <button type="button" class="btn btn-outline-secondary bi bi-calendar" (click)="dp.toggle()"></button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-  </div>
-</ng-template>
-<!-- <router-outlet></router-outlet> -->
+<br>
+<router-outlet></router-outlet>
+<br>
+<br>
+<br>
+<footer>
+  <p>&copy; Душкови 2023 | Къща за гости | <a style="text-decoration: none;" routerLink="/contacts">Контакти</a></p>
+  <p>Разработено от <a id="author" target="_blank" href="https://github.com/BaiGanio">L. Kikov</a></p>
+</footer>

@@ -1,0 +1,29 @@
+
+<h1 class="text-center">Механа за Вашето удоволствие и настроение </h1>
+<br>
+<div class="row" style="width: 80%; margin: 0 auto;">
+    <div *ngFor='let r of tavern;' class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <img src='{{r.Image}}' class="img-thumbnail img-fluid" alt="Sample image" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            </div>
+        </div>
+      
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="{{r.Image}}" class="wtf" class="img-thumbnail img-fluid" alt="Sample image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
