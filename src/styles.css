@@ -4,13 +4,15 @@
     font-family: 'Alsandra';
     src: url('../src/assets/fonts/alsandra.ttf') format('truetype');
 }
-
+.nav-link{
+    font-size: 1.4em !important;
+}
 .nav-link:hover{
     cursor: pointer;
     background-color: lightskyblue;
 }
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
 .title{
